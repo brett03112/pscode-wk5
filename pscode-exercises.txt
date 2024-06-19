@@ -1,0 +1,89 @@
+// Exercise 1: Calculate the Sum of Two Numbers
+
+a + b = c
+num1 + num2 = sum
+print sum
+
+ask for 2 numbers
+add the 2 number together
+print on the screen the sum of those 2 numbers
+
+
+// Exercise 2: Check if a Number is Even or Odd
+num1
+if (num1 % 2 == 0) 
+    print num1 is even
+else
+    print num1 is odd
+
+Ask for a number (num1)
+Take the modulus of num1 by 2
+If the result is 0, print to the screen that num1 is even
+If the result is not 0, print to the screen that num1 is odd
+
+
+// Exercise 3:
+Write pseudo code that will perform the following.
+a) Read in 5 separate numbers.
+b) Calculate the average of the five numbers.
+c) Find the smallest (minimum) and largest (maximum) of the five
+entered numbers.
+d) Write out the results found from steps b and c with a message
+describing what they are
+
+_____________A_________________ 
+
+a, b, c, d, e are all numbers read from the terminal
+arr[] is an array of numbers to store the values
+arr = {a, b, c, d, e}
+
+_____________B_________________
+
+count = 0 // initialize the counter
+sum = 0 // initialize the sum of the numbers
+while count < 5
+    sum = sum + arr[count]
+    count = count + 1
+
+avg = (float) (sum / 5) // calculate the average. Use a float to avoid an integer division
+print avg to the screen
+
+_____________C_________________
+
+max = arr[0]  // initialize max to the first number of arr
+min = arr[0]  // initialize min to the first number of arr
+max_pos = 0  // initialize max_pos to the first element of arr
+min_pos = 0  // initialize min_pos to the first element of arr
+
+// loop through the array and update max, min, max_pos, and min_pos
+for i = 0; i < 5; i = i + 1
+    if (arr[i] > max)
+        max = arr[i]
+        max_pos = i
+
+    if (arr[i] < min)
+        min = arr[i]
+        min_pos = i
+
+print max, min, max_pos, and min_pos to the screen
+
+_____________D_________________
+
+a)  -ask the user to enter 5 numbers from the terminal
+    -store the numbers in an array arr[]
+
+b)  -initialize two variables to store the counter (count) and the sum (sum)
+    -using a while loop, add each number in the array to the sum and increment the counter by 1 until the counter reaches 5
+    -once the loop is done, calculate the average by dividing the sum by the number of elements in the array
+    -ensure the average is stored in a float variable to avoid an integer division
+    -print the average to the screen
+
+c)  -find the maximum and minimum numbers in the array arr[] and their respective positions in the array
+    -initialize two variables to the first element in the array (arr[0]) and to store the maximum (max) and minimum numbers (min). 
+    -initialize two variables to store the positions of the maximum (max_pos) and minimum (min_pos) numbers which are both set to arr[0]
+    -using a for loop, compare each number in the array to the current maximum and minimum numbers
+    -if the current number is greater than the current maximum number, update the maximum number (max = arr[i]) and its position (max_pos = i)
+    -if the current number is less than the current minimum number, update the minimum number (min = arr[i]) and its position (min_pos = i)
+    -once the loop completes, print the maximum, minimum, maximum position, and minimum position to the screen (max, min, max_pos, and min_pos)
+
+-- END --
